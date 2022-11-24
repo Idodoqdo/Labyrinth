@@ -28,9 +28,11 @@ void Path::FindShortestPath(
     int dist, std::list<std::pair<std::size_t, std::size_t>> &path) {
   // если место назначения найдено, обновить `min_dist`
   if (i == y && j == x) {
+    if (dist < min_dist) {
     min_dist = std::min(dist, min_dist);
     path.push_back(std::make_pair(y, x));
     path_ = path;
+    }
     return;
   }
   visited_[i][j] = true;  //  установить (i, j) ячейку как посещенную
