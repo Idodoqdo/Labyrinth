@@ -50,3 +50,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 build/
+src/tests/test_cave.txt

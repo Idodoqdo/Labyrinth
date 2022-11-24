@@ -29,9 +29,9 @@ void Path::FindShortestPath(
   // если место назначения найдено, обновить `min_dist`
   if (i == y && j == x) {
     if (dist < min_dist) {
-    min_dist = std::min(dist, min_dist);
-    path.push_back(std::make_pair(y, x));
-    path_ = path;
+      min_dist = std::min(dist, min_dist);
+      path.push_back(std::make_pair(y, x));
+      path_ = path;
     }
     return;
   }
